@@ -92,6 +92,13 @@ void init_offsets() {
         allproc_offset = 0x5a4128; /* @Mila432 */
         procoff = 0x360;
         rootvnode_offset = 0x5aa0b8; /* @Mila432 */
+    
+        /* THIS IS A IPHONE 7 TEST */
+
+    } else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Tue Nov 29 21:40:08 PST 2016; root:xnu-3789.32.1~4/RELEASE_ARM64_T8010") == 0) {
+        allproc_offset = //NO0x5a4128; /* @DavidVaz1999 */
+        procoff = //NO0x360;
+        rootvnode_offset = //NO0x5aa0b8; /* @DavidVaz1999 */
     } else {
         printf("missing offset, prob crashing\n");
     }
